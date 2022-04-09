@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+    <div class="container">
+       <br> <h1 class="name">StopWatch</h1><br><br><br><br>
+        <div class="watch">
+            
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <span class="texter" id="hr">00</span><span class="hr">&nbsp;:</span>
+                    &nbsp;<span class="texter" id="min">00</span><span class="min">&nbsp;:</span>
+                    &nbsp;<span class="texter" id="sec">00</span><span class="sec">&nbsp;:</span>
+                    &nbsp;<span class="texter" id="msec">00</span>
+                </div>
+            </div>
+            <div class="button-wrap"><br><br><br>
+                <button class="button" onclick="reset()" id="resetBtn">Reset</button>
+                <button class="button" onclick="start()" id="playBtn">Play</button>
+                <button class="button" onclick="pause()" id="pauseBtn">Pause</button>
+                <button class="button" onclick="lap()" id="lapBtn">Lap</button>
+            </div>
+        </div>
+                      <center><br><br><br>
+                        <div id="laps">
+                            <p id="lapRecord"></p>
+                          </div>
+                      </center>
+                      </div>
+    </div>
+    <script src="watch.js"></script>
+</body>
+</html>
